@@ -24,7 +24,7 @@ figlet("Bear CLI", function(err,data){
     const options = yargs(hideBin(process.argv))
         
         .usage(usage)
-        .option("p", { alias: "project", describe: "Type of project (web)", type: "string", demandOption: true })
+        .option("p", { alias: "project", describe: "Type of project (web, data)", type: "string", demandOption: true })
         .option("l", { alias: "level", describe: "Level of experience(beginner, advanced)", type: "string", demandOption: true })
         .help()
         .argv;
