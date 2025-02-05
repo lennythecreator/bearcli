@@ -16,7 +16,7 @@ Bear CLI is a command-line interface tool designed to help students quickly set 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/Bear_CLI.git
+   git clone https://github.com/lennythecreator/Bear-CLI.git
    cd Bear_CLI
    ```
 
