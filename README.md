@@ -16,7 +16,7 @@ Bear CLI is a command-line interface tool designed to help students quickly set 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/Bear_CLI.git
+   git clone https://github.com/lennythecreator/Bear-CLI.git
    cd Bear_CLI
    ```
 
@@ -44,7 +44,7 @@ Once installed or linked globally, run Bear CLI from your terminal.
 bearcli -p <project> -l <level>
 ```
 
-- `-p, --project`: Specifies the type of project to set up. Currently, the supported type is `web`.
+- `-p, --project`: Specifies the type of project to set up. Currently, the supported type is `web` and `data`.
 - `-l, --level`: Specifies the level of experience, e.g., `beginner` or `advanced` the supported type is `beginner`.
 
 ### Example
