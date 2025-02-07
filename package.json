@@ -1,6 +1,6 @@
 {
-  "name": "bears_cli",
-  "version": "1.0.0",
+  "name": "bearcli",
+  "version": "1.0.2",
   "type": "module",
   "description": "A CLI tool to help students get set up to learn different technologies.",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "Bear_CLI"
+    "url": "https://github.com/lennythecreator/bearcli"
   },
   "keywords": [
     "bear"
