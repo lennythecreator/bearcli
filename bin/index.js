@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import chalk from 'chalk';
+import boxen from 'boxen';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import fs from 'fs/promises';
@@ -13,7 +14,6 @@ figlet("Bear CLI", function(err, data) {
         return;
     }
     console.log(chalk.green(data));
-    // lets try not to hardcode this and make it based on what the user types
     const usage = chalk.yellow("\nUsage: bearscli -p <project>  -l <level>\n") + chalk.green("Creates file structure for getting started learning different technologies.");
 
     const options = yargs(hideBin(process.argv))
