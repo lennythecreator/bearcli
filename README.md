@@ -13,18 +13,25 @@ Bear CLI is a command-line interface tool designed to help students quickly set 
 
 ## Installation
 
-1. **Clone the Repository**
+1. **Clone the Repository(Optional)**
 
    ```bash
    git clone https://github.com/lennythecreator/bearcli.git
    cd bearcli
    ```
 
+
+
 2. **Install Dependencies**
 
    ```bash
    npm install
    ```
+   or  
+   ```bash
+   npm install -g bears_cli
+   ``` 
+   to install the package globally.
 
 3. **Link the CLI Globally (Optional)**
 
@@ -41,7 +48,7 @@ Once installed or linked globally, run Bear CLI from your terminal.
 ### Command Syntax
 
 ```bash
-bear_cli -p <project> -l <level>
+bears_cli -p <project> -l <level>
 ```
 
 - `-p, --project`: Specifies the type of project to set up. Currently, the supported type is `web` and `data`.
@@ -52,7 +59,7 @@ bear_cli -p <project> -l <level>
 To set up a basic web project for beginners:
 
 ```bash
-bear_cli -p web -l beginner
+bears_cli -p web -l beginner
 ```
 
 When executed, the CLI will:

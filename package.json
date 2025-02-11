@@ -1,17 +1,17 @@
 {
-  "name": "@lennythecreator/bear_cli",
-  "version": "1.0.3",
+  "name": "bears_cli",
+  "version": "1.0.5",
   "type": "module",
   "description": "A CLI tool to help students get set up to learn different technologies.",
   "bin": {
-    "bear_cli": "./bin/index.js"
+    "bears_cli": "bin/index.js"
   },
   "scripts": {
-    "test": "bear_cli run"
+    "test": "bears_cli run"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lennythecreator/bearcli"
+    "url": "git+https://github.com/lennythecreator/bearcli.git"
   },
   "keywords": [
     "bear"
@@ -19,7 +19,7 @@
   "author": "Lenny Uwaeme",
   "license": "ISC",
   "dependencies": {
-    "boxen": "^8.0.1",
+    "bears_cli": "^1.0.4",
     "chalk": "^5.4.1",
     "figlet": "^1.8.0",
     "yargs": "^17.7.2"
