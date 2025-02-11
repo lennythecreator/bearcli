@@ -37,7 +37,7 @@ Bear CLI supports multiple frontend and backend technologies, allowing developer
 ### **Example Usage**
 Generate a React frontend with a Flask backend:
 ```bash
-bearscli -p web -l beginner -n project_name
+bears_cli -p web -l beginner -n project_name
 ```
 
 ## Installation
