@@ -41,7 +41,7 @@ Once installed or linked globally, run Bear CLI from your terminal.
 ### Command Syntax
 
 ```bash
-bearcli -p <project> -l <level>
+bear_cli -p <project> -l <level>
 ```
 
 - `-p, --project`: Specifies the type of project to set up. Currently, the supported type is `web` and `data`.
@@ -52,7 +52,7 @@ bearcli -p <project> -l <level>
 To set up a basic web project for beginners:
 
 ```bash
-bearcli -p web -l beginner
+bear_cli -p web -l beginner
 ```
 
 When executed, the CLI will:
