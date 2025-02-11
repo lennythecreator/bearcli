@@ -8,43 +8,34 @@ import figlet from 'figlet';
 import path from 'path';
 
 
-figlet("Bear CLI", function(err,data){
-
+figlet("Bear CLI", function(err, data) {
     if (err) {
         console.log(chalk.red("Error generating figlet"));
         return;
     }
-    console.log(chalk.green(data)); // Display figlet output in green color
-
-    //cli logic
-    const usage = chalk.yellow("\nUsage: bearcli -p <project>  -l <level>\n") +chalk.green("Creates file structure for getting started learning different technologies.");
-
-
+    console.log(chalk.green(data));
+    const usage = chalk.yellow("\nUsage: bearscli -p <project>  -l <level>\n") + chalk.green("Creates file structure for getting started learning different technologies.");
 
     const options = yargs(hideBin(process.argv))
-        
         .usage(usage)
         .option("p", { alias: "project", describe: "Type of project (web, data)", type: "string", demandOption: true })
         .option("l", { alias: "level", describe: "Level of experience(beginner, advanced)", type: "string", demandOption: true })
+        .option("n", {alias: "name", describe: "Optional project name", type: "String", demandOption: false})
         .help()
         .argv;
     console.log(usage)
-    createProject(options.project, options.level)
-
-
+    createProject(options.project, options.level, options.name)
 })
 
 
-async function createProject(projectType,level) {
-    
-    const projectRoot = path.join(process.cwd(), "project");
-    // Trim and normalize case
+async function createProject(projectType, level, name) {
+    const projectRoot = path.join(process.cwd(), name);
     projectType = projectType.trim().toLowerCase();
     level = level.trim().toLowerCase();
 
     console.log(`Project type: ${projectType}, Level: ${level}`);
     console.log(`Normalized Project type: "${projectType}", Normalized Level: "${level}"`);
-    
+
     try{
         const projectKey = `${projectType}_${level}`;
         
@@ -74,13 +65,10 @@ async function createProject(projectType,level) {
                 
             default:
                 console.log(chalk.red("please enter a valid option"));
+
         }
-
-    } catch(error){
-        console.log(chalk.red("please enter a valid option"))
+    } catch (error) { 
+        console.log(chalk.red("failed to create project structure."))
     }
-
-   
-
 }
 
