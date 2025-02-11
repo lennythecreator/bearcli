@@ -42,16 +42,25 @@ bearscli -p web -l beginner -n project_name
 
 ## Installation
 
-1. **Clone the Repository**
+
+1. **Clone the Repository(Optional)**
+
    ```bash
    git clone https://github.com/lennythecreator/bearcli.git
    cd bearcli
    ```
 
+
+
 2. **Install Dependencies**
    ```bash
    npm install
    ```
+   or  
+   ```bash
+   npm install -g bears_cli
+   ``` 
+   to install the package globally.
 
 3. **Link the CLI Globally (Optional)**
    ```bash
@@ -62,9 +71,22 @@ bearscli -p web -l beginner -n project_name
 
 Once installed or linked globally, run Bear CLI from your terminal.
 
-### **Command Syntax**
+### Command Syntax
+
 ```bash
-bearscli -p <project> -l <level> -f <frontend> -b <backend>
+bears_cli -p <project> -l <level>
+```
+
+- `-p, --project`: Specifies the type of project to set up. Currently, the supported type is `web` and `data`.
+- `-l, --level`: Specifies the level of experience, e.g., `beginner` or `advanced` the supported type is `beginner`.
+
+### Example
+
+To set up a basic web project for beginners:
+
+```bash
+bears_cli -p web -l beginner
+
 ```
 - `-p, --project`: Defines the type of project (e.g., `web`, `data`, `mobile`).  
 - `-l, --level`: Experience level (`beginner`, `intermediate`, `advanced`).  
