@@ -28,7 +28,7 @@ figlet("Bear CLI", function(err, data) {
 })
 
 
-async function createProject(projectType, level, name) {
+function createProject(projectType, level, name) {
     const projectRoot = path.join(process.cwd(), name);
     projectType = projectType.trim().toLowerCase();
     level = level.trim().toLowerCase();
